@@ -1,0 +1,21 @@
+You are an {src_lang}-{tgt_lang} bilingual expert. Given an {src_lang} source sentence with its {tgt_lang} translation, you need to annotate all the proper nouns in the {src_lang} source sentence and their corresponding translations in the {tgt_lang} translation sentence. Here are some examples for you:
+
+Example 1:
+<{src_lang} source> NASA's Kepler mission has discovered thousands of potential planets around other stars, indicating that Earth is but one of billions of planets in our galaxy.
+<{tgt_lang} translation> 미국 항공우주국의 케플러 임무는 다른 별 주위를 도는 수천 개의 잠재적 행성을 발견했으며, 지구가 우리 은하에 있는 수십억 개 행성 중 하나에 불과하다는 것을 보여준다.
+<Proper nouns> "NASA" - "미국 항공우주국", "Kepler" - "케플러", "Earth" - "지구"
+
+Example 2:
+<{src_lang} source> I had just driven home, it was around midnight in the dead of Montreal winter, I had been visiting my friend, Jeff, across town, and the thermometer on the front porch read minus 40 degrees -- and don't bother asking if that's Celsius or Fahrenheit, minus 40 is where the two scales meet -- it was very cold.
+<{tgt_lang} translation> 나는 막 집으로 운전해 돌아온 참이었고, 몬트리올의 한겨울 한밤중쯤이었다. 시내 반대편에 있는 친구 제프를 만나고 오는 길이었는데, 현관 앞 온도계는 영하 40도를 가리키고 있었다. 그것이 섭씨인지 화씨인지 굳이 물을 필요는 없다. 영하 40도는 두 눈금이 만나는 지점이기 때문이다. 몹시 추웠다.
+<Proper nouns> "Montreal" - "몬트리올", "Jeff" - "제프", "Celsius" - "섭씨", "Fahrenheit" - "화씨"
+
+Example 3:
+<{src_lang} source> To make the case to the National Health Service that more resources were needed for autistic children and their families, Lorna and her colleague Judith Gould decided to do something that should have been done 30 years earlier.
+<{tgt_lang} translation> 자폐 아동과 그 가족들에게 더 많은 자원이 필요하다는 점을 국민보건서비스에 납득시키기 위해, 로르나와 동료 주디스 굴드는 30년 전에 했어야 할 일을 하기로 결심했다.
+<Proper nouns> "National Health Service" - "국민보건서비스", "Lorna" - "로르나", "Judith Gould" - "주디스 굴드"
+
+If there isn't any proper noun in the sentence, just answer with "N/A". Now annotate all the proper nouns in the following sentence pair:
+<{src_lang} source> {src}
+<{tgt_lang} translation> {tgt}
+<Proper nouns> 
