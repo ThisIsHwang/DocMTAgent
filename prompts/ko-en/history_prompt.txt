@@ -1,19 +1,19 @@
 You are an {src_lang}-{tgt_lang} bilingual expert. Given an {src_lang} source sentence with its {tgt_lang} translation, you need to annotate all the proper nouns in the {src_lang} source sentence and their corresponding translations in the {tgt_lang} translation sentence. Here are some examples for you:
 
 Example 1:
-<{src_lang} source> アメリカ航空宇宙局のケプラー計画は、他の恒星の周りに何千もの潜在的な惑星を発見し、地球は銀河系にある何十億もの惑星のうちの1つに過ぎないことを示している。
+<{src_lang} source> 미국 항공우주국의 케플러 임무는 다른 별 주위를 도는 수천 개의 잠재적 행성을 발견했으며, 지구가 우리 은하에 있는 수십억 개 행성 중 하나에 불과하다는 것을 보여준다.
 <{tgt_lang} translation> NASA's Kepler mission has discovered thousands of potential planets around other stars, indicating that Earth is but one of billions of planets in our galaxy.
-<Proper nouns> "アメリカ航空宇宙局" - "NASA", "ケプラー計画は" - "Kepler mission", "地球" - "Earth"
+<Proper nouns> "미국 항공우주국" - "NASA", "케플러" - "Kepler", "지구" - "Earth"
 
 Example 2:
-<{src_lang} source> 真冬の北海道の真夜中頃、車で家に帰ったばかりだった。街の反対側にいる友人の健を訪ねていたのだが、玄関ポーチの温度計はマイナス40度を示していた。摂氏か華氏かは聞かなくていい。マイナス40度は2つの温度計が交わるところだ。とても寒かった。
-<{tgt_lang} translation> I had just driven home,  it was around midnight in the dead of Hokkaido winter, I had been visiting my friend, Ken, across town, and the thermometer on the front porch read minus 40 degrees -- and don't bother asking if that's Celsius or Fahrenheit, minus 40 is where the two scales meet -- it was very cold.
-<Proper nouns> "北海道" - "Hokkaido", "健" - "Ken", "摂氏" - "Celsius", "華氏" - "Fahrenheit"
+<{src_lang} source> 나는 한겨울 몬트리올의 한밤중에 막 집에 차를 몰고 돌아왔다. 시내 반대편에 사는 친구 제프를 만나고 왔는데, 현관 앞 온도계는 영하 40도를 가리키고 있었다. 섭씨인지 화씨인지 굳이 물을 필요는 없다. 영하 40도는 두 눈금이 만나는 지점이기 때문이다. 몹시 추웠다.
+<{tgt_lang} translation> I had just driven home, it was around midnight in the dead of Montreal winter, I had been visiting my friend, Jeff, across town, and the thermometer on the front porch read minus 40 degrees -- and don't bother asking if that's Celsius or Fahrenheit, minus 40 is where the two scales meet -- it was very cold.
+<Proper nouns> "몬트리올" - "Montreal", "제프" - "Jeff", "섭씨" - "Celsius", "화씨" - "Fahrenheit"
 
 Example 3:
-<{src_lang} source> 自閉症の子供とその家族のためにもっと多くの資源が必要であることを国民保健サービスに訴えるため、ゆうきと同僚のジュディス・グールドは、30年前に行われるべきだったことを実行することを決意した。
-<{tgt_lang} translation> To make the case to the National Health Service that more resources were needed for autistic children and their families, Yuki and her colleague Judith Gould decided to do something that should have been done 30 years earlier.
-<Proper nouns> "国民保健サービス" - "National Health Service", "ゆうき" - "Yuki", "ジュディス・グールド" - "Judith Gould"
+<{src_lang} source> 자폐 아동과 그 가족들에게 더 많은 자원이 필요하다는 점을 국민보건서비스에 설득하기 위해, 로나와 동료 주디스 굴드는 30년 전에 이루어졌어야 할 일을 하기로 결심했다.
+<{tgt_lang} translation> To make the case to the National Health Service that more resources were needed for autistic children and their families, Lorna and her colleague Judith Gould decided to do something that should have been done 30 years earlier.
+<Proper nouns> "국민보건서비스" - "National Health Service", "로나" - "Lorna", "주디스 굴드" - "Judith Gould"
 
 If there isn't any proper noun in the sentence, just answer with "N/A". Now annotate all the proper nouns in the following sentence pair:
 <{src_lang} source> {src}
